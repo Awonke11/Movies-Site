@@ -87,7 +87,7 @@ a {
     justify-content: center;
     align-items: center;
     height: 20vh;
-    width: 100%;
+    max-width: 100%;
     margin-bottom: 2rem;
 }
 .movie-list {
@@ -125,4 +125,72 @@ a {
     justify-content: center;
     align-items: center;
     width: 100%;
+}
+
+/* ------------- responsive ------------- */
+@media (min-width: 300px) {
+    .category li,
+    .category a {
+        font-size: 0.8rem;
+    }
+    .search-title {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    }
+    .search-bar {
+        width: 70%;
+    }
+    .rec-title h1 {
+        font-size: 1.5rem;
+    }
+    .movie-list {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 2rem;
+    justify-items: center;
+    }
+}
+@media (min-width: 500px) {
+    .category li,
+    .category a {
+        font-size: 1.5rem;
+    }
+    .search-title {
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+    }
+    .search-bar {
+        width: 70%;
+    }
+    .rec-title h1 {
+        font-size: 2rem;
+    }
+    .movie-list {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 2rem;
+    justify-items: center;
+    }
+}
+@media (min-width: 900px) {
+    .category li,
+    .category a {
+        font-size: 20px;
+    }
+    .search-title {
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+    }
+    .search-bar {
+        width: 50%;
+    }
+    .rec-title h1 {
+        font-size: 2.5rem;
+    }
+    .movie-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    justify-items: center;
+    }
 }
