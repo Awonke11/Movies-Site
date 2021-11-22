@@ -1,0 +1,85 @@
+:root {
+    --cls-main: #ffffff;
+    --cls-secondary: #010125;
+    --cls-hover: rgb(17, 78, 219);
+    --border-radius: 10px;
+}
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Poppins', sans-serif;
+}
+body {
+    background: url(/images/best\ wallpaper.jpg);
+    height: 80vh;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main-container {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 2rem;
+    margin-top: 20vh;
+    height: 100%;
+    width: 80%;
+    /* background-color: var(--cls-main) */
+}
+.heading-cont {
+    color: var(--cls-main);
+    font-size: 40px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: red; */
+}
+.sign {
+    background-color: var(--cls-secondary);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: var(--border-radius);
+}
+.sign-heading {
+    color: var(--cls-main);
+    padding: 30px;
+}
+form {
+    /* flex: 1; */
+    /* background-color: var(--cls-secondary); */
+    width: 90%;
+}
+form h4 {
+    color: var(--cls-main);
+    padding: 10px 2px;
+    font-size: 20px;
+}
+form input {
+    width: 95%;
+    height: 40px;
+    border: 1px solid var(--cls-main);
+    font-size: 15px;
+    color: var(--cls-main);
+    background-color: var(--cls-secondary);
+    padding: 2px 10px;
+}
+button {
+    margin-top: 20px;
+    width: 50%;
+    height: 40px;
+    cursor: pointer;
+    border-radius: var(--border-radius);
+    border: none;
+    outline: none;
+    background-color: var(--cls-main);
+}
+button a {
+    text-decoration: none;
+    color: var(--cls-secondary);
+    font-size: 15px;
+}
+button:hover {
+    background-color: var(--cls-hover);
+}
