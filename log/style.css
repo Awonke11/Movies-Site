@@ -25,6 +25,7 @@ body {
     height: 100%;
     width: 80%;
     /* background-color: var(--cls-main) */
+    
 }
 .heading-cont {
     color: var(--cls-main);
@@ -44,7 +45,8 @@ body {
 }
 .sign-heading {
     color: var(--cls-main);
-    padding: 30px;
+    padding: 50px;
+    padding-bottom: 30px;
 }
 form {
     /* flex: 1; */
